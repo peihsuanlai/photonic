@@ -1,0 +1,566 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #5A5A5A;
+}
+body ::-moz-selection {
+  background-color: rgba(194, 26, 31, 0.3);
+}
+body ::selection {
+  background-color: rgba(194, 26, 31, 0.3);
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a,
+span,
+i {
+  display: inline-block;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.checkout-btn {
+  outline: 1px solid #333333;
+  padding: 8px 20px;
+  border-radius: 20px;
+  color: #333333;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all ease-in-out 0.3s;
+}
+.checkout-btn::before {
+  content: "";
+  position: absolute;
+  background-color: #C11920;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all ease-in-out 0.3s;
+}
+.checkout-btn:hover {
+  outline: none;
+  color: #ffffff;
+  transition: all ease-in-out 0.3s;
+}
+.checkout-btn:hover::before {
+  width: 100%;
+  transition: all ease-in-out 0.3s;
+}
+
+.bg-main {
+  background-color: #C11920;
+}
+
+.text-sub {
+  color: #87B5E0;
+}
+
+.text-main {
+  color: #C11920;
+}
+
+.text-lightBlack {
+  color: #5A5A5A;
+}
+
+.text-darkBlack {
+  color: #333333;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-nav {
+  color: #666666;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-32 {
+  font-size: 32px;
+}
+
+.fs-48 {
+  font-size: 48px;
+}
+
+.mb-18 {
+  margin-bottom: 18px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.mb-64 {
+  margin-bottom: 64px;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.py-60 {
+  padding: 60px 0;
+}
+
+.pb-32 {
+  padding-bottom: 32px;
+}
+
+.w-1920 {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.nav-container {
+  background-color: rgba(255, 255, 255, 0.72);
+}
+
+.logo {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 1.7rem;
+}
+
+.menu-icon, .close-icon {
+  font-size: 28px;
+}
+
+.navbar-collapse.show {
+  height: calc(100vh - 48px);
+}
+
+.mobile-menu a {
+  font-weight: 300;
+  transition: all ease-in-out 0.3s;
+}
+.mobile-menu a:hover {
+  color: #C11920;
+  font-weight: 400;
+  transition: all ease-in-out 0.3s;
+}
+
+.banner-carousel .scroll-btn {
+  position: absolute;
+  right: 40px;
+  bottom: 20px;
+  writing-mode: vertical-lr;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  animation: 2s jump ease-out infinite;
+}
+.banner-carousel .item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 50%;
+}
+.banner-carousel .item .content {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+.banner-carousel .item .content h2 {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.banner-carousel .item .content h2::first-letter {
+  border-bottom: 3px solid #C11920;
+}
+.banner-carousel .item .content h3 {
+  font-size: 40px;
+  letter-spacing: 4px;
+  line-height: 50px;
+}
+.banner-carousel .owl-nav.disabled + .owl-dots {
+  margin-top: -35px;
+  position: relative;
+}
+.banner-carousel .owl-dots .owl-dot span {
+  background-color: #87B5E0;
+  width: 18px;
+}
+.banner-carousel .owl-dots .owl-dot.active span {
+  width: 35px;
+  background-color: #ffffff;
+}
+
+@keyframes jump {
+  0%, 100%, 20%, 50%, 80% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20%);
+  }
+  60% {
+    transform: translateY(-10%);
+  }
+}
+.system-container {
+  padding-top: 76px;
+  margin-bottom: 68px;
+}
+.system-container .system-carousel {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.system-container .img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 60%;
+}
+.system-container h2 {
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+.system-container h2::first-letter {
+  border-bottom: 3px solid #C11920;
+}
+.system-container h3 {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.system-container .owl-nav [class*=owl-] {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.system-container .owl-nav [class*=owl-]:hover {
+  background-color: transparent;
+  color: #333333;
+}
+.system-container .owl-nav [class*=owl-] i {
+  font-size: 20px;
+}
+@media (min-width: 992px) {
+  .system-container .owl-nav [class*=owl-] i {
+    font-size: 30px;
+  }
+}
+.system-container .owl-nav button.owl-prev {
+  left: -3%;
+}
+@media (min-width: 992px) {
+  .system-container .owl-nav button.owl-prev {
+    left: -5%;
+  }
+}
+.system-container .owl-nav button.owl-next {
+  right: -3%;
+}
+@media (min-width: 992px) {
+  .system-container .owl-nav button.owl-next {
+    right: -5%;
+  }
+}
+
+.upgrade-container h2 {
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+.upgrade-container h2::first-letter {
+  border-bottom: 3px solid #C11920;
+}
+.upgrade-container p {
+  letter-spacing: 1px;
+}
+.upgrade-container a:hover {
+  color: #5A5A5A;
+}
+.upgrade-container a i {
+  font-size: 30px;
+  animation: 2s jump ease-out infinite;
+}
+
+.crm-container {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 38%;
+}
+
+.crm-content-container {
+  background-color: #17539c;
+  padding-bottom: 55px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.crm-content-container .content {
+  top: -30px;
+  position: relative;
+}
+.crm-content-container .content h2 {
+  font-size: 28px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+.crm-content-container .content h2::first-letter {
+  border-bottom: 3px solid #C11920;
+}
+.crm-content-container .content h3 {
+  font-weight: 300;
+}
+
+.step-content {
+  background-color: #ffffff;
+  margin-top: -30px;
+  padding: 50px 15px;
+  line-height: 32px;
+  position: relative;
+}
+.step-content::before {
+  content: "";
+  position: absolute;
+  left: -180px;
+  background-image: url("/frontEndPackage/images/shadow-left.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 30px;
+  width: 180px;
+  height: 60px;
+  display: none;
+}
+@media (min-width: 1400px) {
+  .step-content::before {
+    display: block;
+  }
+}
+.step-content:after {
+  content: "";
+  position: absolute;
+  right: -180px;
+  background-image: url("/frontEndPackage/images/shadow-left.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 30px;
+  width: 180px;
+  height: 60px;
+  transform: scaleX(-1);
+  display: none;
+}
+@media (min-width: 1400px) {
+  .step-content:after {
+    display: block;
+  }
+}
+
+.step-container {
+  position: relative;
+  margin-top: -10px;
+}
+.step-container::after {
+  display: none;
+  content: "";
+  position: absolute;
+  border-bottom: 2px dashed #5A5A5A;
+  width: 100%;
+  bottom: 30%;
+}
+@media (min-width: 1200px) {
+  .step-container::after {
+    display: block;
+  }
+}
+.step-container li {
+  width: 50%;
+  position: relative;
+}
+.step-container li:not(:last-child)::after {
+  display: none;
+  content: ">";
+  position: absolute;
+  bottom: 18%;
+  right: -10%;
+  border-radius: 50%;
+  width: 36px;
+  line-height: 36px;
+  text-align: center;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  z-index: 1;
+}
+@media (min-width: 1200px) {
+  .step-container li:not(:last-child)::after {
+    display: block;
+  }
+}
+@media (min-width: 576px) {
+  .step-container li {
+    width: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .step-container li {
+    width: 12.5%;
+  }
+}
+.step-container .icon {
+  padding-bottom: 0px;
+}
+@media (min-width: 1200px) {
+  .step-container .icon {
+    padding-bottom: 18px;
+  }
+}
+.step-container .img-container {
+  height: 60px;
+}
+.step-container span {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.step-container h3 {
+  font-weight: 300;
+}
+
+.shop-container {
+  position: relative;
+}
+.shop-container .shop-bg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 45%;
+}
+@media (min-width: 576px) {
+  .shop-container .shop-bg {
+    padding-bottom: 36%;
+  }
+}
+.shop-container .content {
+  position: static;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .shop-container .content {
+    width: 42%;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+.shop-container .content h2 {
+  font-size: 28px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  line-height: 40px;
+}
+.shop-container .content h2::first-letter {
+  border-bottom: 3px solid #C11920;
+}
+.shop-container .content h3 {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.shop-service-container .service {
+  row-gap: 16px;
+}
+.shop-service-container .service > li {
+  font-weight: 500;
+}
+.shop-service-container .service .sub-service {
+  font-weight: 300;
+}
+.shop-service-container .service .sub-service li:first-child {
+  margin-top: 8px;
+}
+.shop-service-container .service .sub-service li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.esg-container {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.esg-container .content {
+  padding-top: 70px;
+}
+.esg-container .content h2 {
+  font-size: 28px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  line-height: 40px;
+}
+.esg-container .content h2::first-letter {
+  border-bottom: 3px solid #C11920;
+}
+.esg-container .content h3 {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+.esg-container .content .points {
+  font-weight: 500;
+  margin: 10% 0;
+}
+.esg-container .content .points p {
+  font-weight: 300;
+}/*# sourceMappingURL=all.css.map */

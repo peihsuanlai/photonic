@@ -1,0 +1,31 @@
+.nav-container{
+    background-color:rgba(255,255,255,72%);
+}
+
+.logo{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center;
+    text-indent:101%;
+    white-space:nowrap;
+    overflow:hidden;
+    font-size: 1.7rem;
+}
+
+.menu-icon, .close-icon{
+  font-size:28px;
+}
+
+.navbar-collapse.show{
+    height:calc(100vh - 48px);
+}
+
+.mobile-menu a{
+    font-weight: 300;
+    transition: all ease-in-out 0.3s;
+    &:hover{
+        color: $main;
+        font-weight: 400;
+        transition: all ease-in-out 0.3s;
+    }
+}

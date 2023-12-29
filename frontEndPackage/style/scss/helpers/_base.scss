@@ -1,0 +1,60 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Noto Sans TC", sans-serif;
+    color: $light-text;
+    ::selection {
+        background-color: rgba(194, 26, 31, 0.3);
+    }
+}
+
+img {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+a,
+span,
+i {
+    display: inline-block;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+.checkout-btn {
+    outline: 1px solid $dark-text;
+    @include padding(8px, 20px);
+    border-radius: 20px;
+    color: $dark-text;
+    //background-color:transparent;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all ease-in-out 0.3s;
+    &::before {
+        content: "";
+        position: absolute;
+        background-color: $main;
+        width: 0;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all ease-in-out 0.3s;
+    }
+    &:hover {
+        outline: none;
+        color: $white;
+        transition: all ease-in-out 0.3s;
+        &::before {
+            width: 100%;
+            transition: all ease-in-out 0.3s;
+        }
+    }
+}
