@@ -323,6 +323,10 @@ a:hover {
 .upgrade-container h2::first-letter {
   border-bottom: 3px solid #C11920;
 }
+.upgrade-container h3 {
+  font-size: 18px;
+  font-weight: 300;
+}
 .upgrade-container p {
   letter-spacing: 1px;
 }
@@ -332,6 +336,23 @@ a:hover {
 .upgrade-container a i {
   font-size: 30px;
   animation: 2s jump ease-out infinite;
+}
+
+.scroll-chart .row:not(:first-child) div[class*=col-6] .grey-fill {
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #C1CFD4;
+  position: relative;
+}
+.scroll-chart .row:not(:first-child) div[class*=col-6] .grey-fill .blue-fill {
+  position: absolute;
+  width: 70%;
+  height: 40px;
+  top: 0;
+  left: 10%;
+  border-radius: 20px;
+  background-image: linear-gradient(to right, #4D8DC8, #81B1DE);
 }
 
 .crm-container {
@@ -539,6 +560,7 @@ a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 .esg-container .content {
   padding-top: 70px;
@@ -562,5 +584,113 @@ a:hover {
   margin: 10% 0;
 }
 .esg-container .content .points p {
+  font-weight: 300;
+}
+
+.block-container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 70px 15px;
+}
+.block-container h2 {
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+.block-container h2::first-letter {
+  border-bottom: 3px solid #C11920;
+}
+.block-container li:not(:last-child) {
+  margin-bottom: 16px;
+}
+.block-container a {
+  letter-spacing: 0.8px;
+  transition: all ease-in-out 0.3s;
+}
+.block-container a:hover {
+  transform: translateX(8px);
+  color: #5A5A5A;
+  transition: all ease-in-out 0.3s;
+}
+
+.client-container {
+  padding: 30px 15px;
+}
+.client-container h2 {
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+.client-container h2::first-letter {
+  border-bottom: 3px solid #C11920;
+}
+
+.footer-banner a {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 30%;
+  position: relative;
+  transition: all ease-in-out 0.3s;
+}
+@media (min-width: 768px) {
+  .footer-banner a {
+    width: 50%;
+    padding-bottom: 20%;
+  }
+}
+@media (min-width: 992px) {
+  .footer-banner a {
+    padding-bottom: 15%;
+  }
+}
+.footer-banner a > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.footer-banner a:hover {
+  opacity: 0.8;
+  transition: all ease-in-out 0.3s;
+}
+
+footer {
+  background-color: #2a2a2a;
+  padding: 40px 0px;
+}
+footer ul li {
+  margin-bottom: 12px;
+}
+footer ul a {
+  font-weight: 300;
+  color: #ffffff;
+}
+footer ul a:hover {
+  color: #ffffff;
+}
+footer .items li:not(:last-child) {
+  margin-right: 8px;
+  margin-bottom: 12px;
+}
+footer .items a {
+  padding-bottom: 4px;
+  position: relative;
+}
+footer .items a:hover:after {
+  width: 100%;
+  transition: all ease-in-out 0.3s;
+}
+footer .items a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #ffffff;
+}
+footer .text {
+  margin-bottom: 12px;
   font-weight: 300;
 }/*# sourceMappingURL=all.css.map */
